@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-Medium.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-Book.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "ExpoArabic";
+    src: url(../fonts/ExpoArabic/ExpoArabic-SemiBold.ttf);
+    font-weight: 900;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    &::selection{
+        background-color: #368B85;
+        color: #fff; 
+    }
+    
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #8CC540;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #0e76bd, #8CC540);
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(90deg, #8CC540, #8CC540);
+    }
+}
+
+.overflowNone{
+    overflow: hidden;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+.form-control:focus {
+    outline-width: 0px !important;
+    outline-color: transparent !important;
+    box-shadow: 0 0 0 0 rgba($color: #000000, $alpha: 0);
+}
+
+button {
+    border: 0px;
+    outline: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.overflowNone{
+    overflow: hidden;
+}
+
+.button-contain {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  
+    .custom-btn {
+      width: 140px;
+      height: 50px;
+      border: 0px;
+      outline: none;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #006778, #0e76bd) !important;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 500;
+      color: #fff;
+  
+      &:hover {
+        background: linear-gradient(90deg, #0e76bd, #006778) !important;
+      }
+    }
+}
+
+.general-section {
+    width: 100%;
+    padding: 80px 0px;
+    position: relative;
+}
+  
+.heading {
+    width: 100%;
+    margin-bottom: 50px;
+
+    h1 {
+        width: fit-content;
+        padding: 0px 40px;
+        color: #0e76bd;
+        font-size: 25px;
+        font-weight: 900;
+        position: relative;
+        margin: 0px auto;
+
+        &::after, &::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: url('../images/pharmacy.webp') center/ contain no-repeat;
+        top: calc(50% - 15px);
+        z-index: -1;
+        filter: invert(31%) sepia(100%) saturate(1060%) hue-rotate(180deg) brightness(92%) contrast(92%);
+        }
+
+        &::after {
+        left: 0;
+        }
+
+        &::before {
+        right: 0;
+        }
+    }
+}
+  
+.product-box {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.08);
+    transition: all .3s linear;
+    overflow: hidden;
+  
+    .image-content {
+        width: 100%;
+        height: 200px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .sale {
+            width: 100px;
+            height: 30px;
+            border-radius: 6px;
+            background-color: #8CC540;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            font-size: 15px;
+            color: #fff;
+            font-weight: 500;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    }
+  
+    .content {
+      width: 100%;
+      padding: 15px 10px;
+      text-align: center;
+  
+      h2 {
+        color: #000;
+        font-size: 20px;
+        font-weight: 900;
+        margin: 0px;
+      }
+
+      .price-contain {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-top: 15px;
+
+        .before {
+            color: #808080;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: line-through;
+            margin: 0px !important;
+        }
+
+        .after {
+            color: #333;
+            font-size: 15px;
+            font-weight: 700;
+            margin: 10px 0px 0px;
+            margin: 0px 10px;
+        }
+      }
+    }
+  
+    .product-btn {
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #0e76bd;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+  
+      .custom-btn {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+  
+        img {
+          width: 50%;
+          height: 50%;
+          object-fit: contain;
+          filter: invert(31%) sepia(100%) saturate(1060%) hue-rotate(180deg) brightness(92%) contrast(92%);
+        }
+  
+        &:hover {
+          img {
+            animation: tada .4s linear;
+          }
+        }
+      }
+    }
+  
+    &:hover {
+      transform: translateY(-10px);
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px !important;
+    background-size: 20px 20px;
+    top: unset !important;
+    transform: translate(0px) !important;
+
+    &::after {
+        font-size: 15px;
+        color: #0e76bd;
+    }
+}
+
+.swiper-button-prev{
+    left: calc(50% - 45px) !important;
+}
+
+.swiper-button-next{
+    right: calc(50% - 45px) !important;
+}
