@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
-    });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
@@ -141,4 +137,48 @@ $(document).ready(function () {
             });
         }
     }); 
+
+    var swiper = new Swiper(".prodcutDetailsThumbsSlider", {
+        spaceBetween: 10,
+        
+        freeMode: true,
+        watchSlidesProgress: true,
+        loop: true,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0:{
+                slidesPerView: 2,
+            },
+            700:{
+                slidesPerView: 2,
+            },
+            1050:{
+                slidesPerView: 4,
+            }
+        }
+    });
+    
+    var swiper2 = new Swiper(".prodcutDetailsSwiper", {
+        spaceBetween: 10,
+        loop: true,
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+
+    $(".show_hide_password .show_pass").on('click', function(event) {
+        event.preventDefault();
+        if($(this).siblings("input").attr("type") == "text"){
+            $(this).siblings("input").attr('type', 'password');
+            $(this).addClass( "fa-eye-slash" );
+            $(this).removeClass( "fa-eye" );
+        }else if($(this).siblings("input").attr("type") == "password"){
+            $(this).siblings("input").attr('type', 'text');
+            $(this).removeClass( "fa-eye-slash" );
+            $(this).addClass( "fa-eye" );
+        }
+    });
 });

@@ -20,9 +20,10 @@
     margin: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-transform: capitalize;
 
     &::selection{
-        background-color: #368B85;
+        background-color: #0e76bd;
         color: #fff; 
     }
     

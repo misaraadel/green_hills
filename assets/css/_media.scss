@@ -12,12 +12,20 @@
       }
 
       a {
-        width: 35px !important;
-        height: 35px !important;
+        width: 15px !important;
+        height: 15px !important;
+        background-color: transparent !important;
 
         img {
           width: 15px;
           height: 15px;
+          filter: invert(35%) sepia(67%) saturate(3192%) hue-rotate(178deg) brightness(96%) contrast(103%) !important;
+        }
+
+        span {
+          top: -15px !important;
+          right: -10px !important;
+          z-index: 999 !important;
         }
       }
     }
@@ -32,7 +40,7 @@
     }
 
     .brand-name img{
-      width: 150px !important;
+      width: 120px !important;
     }
 
     .navbar-nav {
@@ -70,6 +78,23 @@
       &:nth-child(1) {
         margin-bottom: 10px;
       }
+    }
+  }
+
+  .sub-header {
+    padding: 100px 0px 40px 0px !important;
+    background-image: none !important;
+  }
+
+  .product-details .prodcutDetailsSwiper .swiper-slide {
+    height: 200px !important;
+  }
+
+  .login {
+    padding: 125px 0px 40px 0px;
+
+    .login .login-contain .data {
+      padding: 20px 10px !important;
     }
   }
 }
