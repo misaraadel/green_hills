@@ -99,6 +99,10 @@ ul{
       &:hover {
         background: linear-gradient(90deg, #0e76bd, #006778) !important;
       }
+
+      &:last-child {
+        margin-inline-start: 15px !important;
+      }
     }
 }
 

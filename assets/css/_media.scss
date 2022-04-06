@@ -97,4 +97,37 @@
       padding: 20px 10px !important;
     }
   }
+
+  .table-resposive  {
+    width: 100%;
+    overflow-x: scroll;
+
+    th, td {
+      min-width: 140px !important;
+    }
+  }
+
+  .cart {
+
+    .button-contain a {
+      font-size: 13px !important;
+      padding: 20px 10px !important;
+    }
+  }
+
+  .checkout.E-payement .checkout-content .button-contain a {
+    font-size: 11px !important;
+  }
+
+  .form-contain .radio-lable label {
+    font-size: 10px !important;
+  }
+
+  .heading h1 {
+    font-size: 22px !important;
+  }
+
+  .checkout .checkout-content .heading h1 {
+    margin: auto !important;
+  }
 }

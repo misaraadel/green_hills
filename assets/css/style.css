@@ -126,6 +126,11 @@ ul {
   background: linear-gradient(90deg, #0e76bd, #006778) !important;
 }
 
+.button-contain .custom-btn:last-child {
+  -webkit-margin-start: 15px !important;
+          margin-inline-start: 15px !important;
+}
+
 .general-section {
   width: 100%;
   padding: 80px 0px;
@@ -3025,6 +3030,47 @@ header .swiper-button-prev {
   background: linear-gradient(90deg, #0e76bd, #006778);
 }
 
+.checkout .checkout-content {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  padding: 25px 30px;
+}
+
+.checkout .checkout-content .heading {
+  margin-bottom: 20px !important;
+}
+
+.checkout .checkout-content .heading h1 {
+  margin: unset !important;
+}
+
+.checkout .checkout-content h2 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.checkout .checkout-content p {
+  color: #808080;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.checkout .checkout-content .form-control {
+  border-radius: 8px !important;
+  -webkit-appearance: auto !important;
+     -moz-appearance: auto !important;
+          appearance: auto !important;
+}
+
+.checkout.E-payement .checkout-content .button-contain a {
+  width: 176px !important;
+}
+
 .contact .map {
   width: 100%;
   height: 371px;
@@ -3278,6 +3324,86 @@ header .swiper-button-prev {
   padding: .8rem 1rem;
 }
 
+.form-contain .flex-data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form-contain .radio-lable {
+  width: 180px;
+  height: 50px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  cursor: pointer;
+}
+
+.form-contain .radio-lable:last-child {
+  margin: 0px !important;
+}
+
+.form-contain .radio-lable input[type="radio"],
+.form-contain .radio-lable input[type="checkbox"] {
+  display: none;
+  cursor: pointer;
+}
+
+.form-contain .radio-lable input[type="radio"]:checked + label,
+.form-contain .radio-lable input[type="checkbox"]:checked + label {
+  background-color: #008BD2;
+  color: #fff;
+}
+
+.form-contain .radio-lable input[type="radio"]:checked + label::before,
+.form-contain .radio-lable input[type="checkbox"]:checked + label::before {
+  border: 5px solid #fff;
+}
+
+.form-contain .radio-lable label {
+  position: relative;
+  color: #0e76bd;
+  font-size: 12px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  border: 1px solid #008BD2;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.form-contain .radio-lable label::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 2px solid #008BD2;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  border-radius: 50%;
+}
+
 .form-contain input,
 .form-contain select {
   height: 50px !important;
@@ -3306,6 +3432,244 @@ header .swiper-button-prev {
      object-fit: contain;
   -webkit-filter: invert(52%) sepia(0%) saturate(2%) hue-rotate(65deg) brightness(95%) contrast(89%);
           filter: invert(52%) sepia(0%) saturate(2%) hue-rotate(65deg) brightness(95%) contrast(89%);
+}
+
+.table-resposive {
+  width: 100%;
+}
+
+.table-resposive table {
+  width: 100%;
+}
+
+.table-resposive table th {
+  background-color: #F6FAFC;
+  color: #0e76bd;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.table-resposive table th, .table-resposive table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 50px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.table-resposive table td {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #000;
+}
+
+.table-resposive table td .product-img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px;
+}
+
+.table-resposive table td .product-num {
+  width: 140px;
+  height: 40px;
+  position: relative;
+  z-index: 9;
+  margin: auto !important;
+  border: 1px solid #f4f7fc;
+}
+
+.table-resposive table td .product-num .product-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0px;
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+}
+
+.table-resposive table td .product-num .num-btn {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.table-resposive table td .product-num .num-btn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: invert(51%) sepia(10%) saturate(19%) hue-rotate(335deg) brightness(97%) contrast(80%);
+          filter: invert(51%) sepia(10%) saturate(19%) hue-rotate(335deg) brightness(97%) contrast(80%);
+}
+
+.table-resposive table td .product-num .num-btn.add {
+  left: 10px;
+}
+
+.table-resposive table td .product-num .num-btn.min {
+  right: 10px;
+}
+
+.table-resposive table td .delete-btn {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cart .button-contain a {
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding: 20px 25px;
+}
+
+.cart .button-contain a:nth-child(2) {
+  background: #EC3737 !important;
+  border: 1px solid #EC3737;
+}
+
+.cart .button-contain a:nth-child(2):hover {
+  background: transparent !important;
+  color: #EC3737;
+}
+
+.discount-shape {
+  width: 100%;
+  padding: 30px 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+
+.discount-shape p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0px !important;
+}
+
+.discount-shape .form-contain .form-group {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin: 15px 0px !important;
+}
+
+.discount-shape .form-contain .form-group .form-control {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #0e76bd;
+  border-radius: 50px;
+  padding: 0px 20px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  -webkit-padding-end: 120px !important;
+          padding-inline-end: 120px !important;
+}
+
+.discount-shape .form-contain .form-group .form-control::-webkit-input-placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+}
+
+.discount-shape .form-contain .form-group .form-control:-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+}
+
+.discount-shape .form-contain .form-group .form-control::-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+}
+
+.discount-shape .form-contain .form-group .form-control::placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+}
+
+.discount-shape .form-contain .form-group .search-btn {
+  width: 100px;
+  height: 40px;
+  border: 0px;
+  outline: none;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#006778), to(#0e76bd));
+  background: linear-gradient(90deg, #006778, #0e76bd);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 5px;
+}
+
+.discount-shape .form-contain .form-group .search-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#0e76bd), to(#006778));
+  background: linear-gradient(90deg, #0e76bd, #006778);
+}
+
+.discount-shape span {
+  color: #008BD2;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.discount-shape .flex-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.discount-shape .button-contain a {
+  width: 100% !important;
 }
 
 footer {
@@ -3665,6 +4029,29 @@ footer .copyrigths a img {
   }
   .login .login .login-contain .data {
     padding: 20px 10px !important;
+  }
+  .table-resposive {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .table-resposive th, .table-resposive td {
+    min-width: 140px !important;
+  }
+  .cart .button-contain a {
+    font-size: 13px !important;
+    padding: 20px 10px !important;
+  }
+  .checkout.E-payement .checkout-content .button-contain a {
+    font-size: 11px !important;
+  }
+  .form-contain .radio-lable label {
+    font-size: 10px !important;
+  }
+  .heading h1 {
+    font-size: 22px !important;
+  }
+  .checkout .checkout-content .heading h1 {
+    margin: auto !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
