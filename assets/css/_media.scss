@@ -12,8 +12,8 @@
       }
 
       a {
-        width: 15px !important;
-        height: 15px !important;
+        width: fit-content !important;
+        height: fit-content !important;
         background-color: transparent !important;
 
         img {
@@ -112,6 +112,8 @@
     .button-contain a {
       font-size: 13px !important;
       padding: 20px 10px !important;
+      min-width: 140px;
+      margin: 0px !important;
     }
   }
 
@@ -129,5 +131,57 @@
 
   .checkout .checkout-content .heading h1 {
     margin: auto !important;
+  }
+
+  .navbar .center-nav .content .list-data li.dropdown  .dropdown-toggle {
+    padding: 0px !important;
+    
+    span {
+      display: none;
+    }
+
+    img {
+      margin: 0px !important;
+      
+    }
+
+    &::after {
+      display: none !important;
+    }
+  }
+
+  .dropdown-menu {
+    transform: translateX(-136px) !important;
+
+    .dropdown-item {
+      padding: 5px 10px !important;
+      height: fit-content !important;
+    }
+  }
+
+  .sub-header .content .sub-header-list li {
+    a {
+      font-size: 12px;
+    }
+
+    span {
+      font-size: 13px !important;
+    }
+  }
+
+  .modal-footer {
+    justify-content: space-between;
+    .custom-btn {
+      width: 47% !important;
+      margin: 0px !important;
+    }
+  }
+
+  .careers .box .flex-data {
+    flex-direction: column;
+
+    a {
+      margin: 10px 0px 0px !important;
+    }
   }
 }

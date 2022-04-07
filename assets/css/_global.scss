@@ -144,6 +144,14 @@ ul{
         right: 0;
         }
     }
+
+    &.margin-none {
+        margin-bottom: 20px !important;
+
+        h1 {
+            margin: unset !important;
+        }
+    }
 }
   
 .product-box {
