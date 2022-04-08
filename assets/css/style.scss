@@ -14,7 +14,67 @@ html[dir="rtl"] {
   * {
     font-family: "ExpoArabic" , sans-serif ;
   }
+
+  footer .content .form-contain .form-group .search-btn,
+  .discount-shape .form-contain .form-group .search-btn,
+  .navbar .center-nav .content .form-contain .form-group .search-btn {
+    right: unset !important;
+    left: 5px !important;
+  }
+
+  .navbar .center-nav .content .list-data li a span {
+    right: unset;
+    left: -5px !important;
+  }
+
+  .about-us .content .list li::before {
+    left: unset !important;
+    right: -6px !important;
+  }
+
+  footer .content .payment {
+    object-position: right !important;
+  }
+
+  .article-box .image-content .time , .product-box .image-content .sale,
+  .product-details .prodcutDetailsThumbsSlider .swiper-button-prev ,
+  .table-resposive table td .product-num .num-btn.add{
+    left: unset !important;
+    right: 10px !important;
+  }
+
+  .table-resposive table td .product-num .num-btn.min ,
+  .product-details .prodcutDetailsThumbsSlider .swiper-button-next {
+    right: unset !important;
+    left: 10px !important;
+  }
+
+  header .swiper-button-prev {
+    right: unset !important;
+    left: 90px !important;
+  }
+
+  header .swiper-button-next {
+    right: unset !important;
+    left: 30px !important;
+  }
+
+  .swiper-button-next {
+    right: unset !important;
+    left: calc(50% - 45px) !important;
+  }
+
+  .swiper-button-prev {
+    left: unset !important;
+    right: calc(50% - 45px) !important;
+  }
+
+  .form-contain .show_pass, .form-data .show_pass {
+    right: unset !important;
+    left: 25px !important;
+  }
 }
+
 
 .navbar {
   width: 100%;

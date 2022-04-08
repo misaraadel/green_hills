@@ -1491,6 +1491,66 @@ html[dir="rtl"] * {
   font-family: "ExpoArabic" , sans-serif;
 }
 
+html[dir="rtl"] footer .content .form-contain .form-group .search-btn,
+html[dir="rtl"] .discount-shape .form-contain .form-group .search-btn,
+html[dir="rtl"] .navbar .center-nav .content .form-contain .form-group .search-btn {
+  right: unset !important;
+  left: 5px !important;
+}
+
+html[dir="rtl"] .navbar .center-nav .content .list-data li a span {
+  right: unset;
+  left: -5px !important;
+}
+
+html[dir="rtl"] .about-us .content .list li::before {
+  left: unset !important;
+  right: -6px !important;
+}
+
+html[dir="rtl"] footer .content .payment {
+  -o-object-position: right !important;
+     object-position: right !important;
+}
+
+html[dir="rtl"] .article-box .image-content .time, html[dir="rtl"] .product-box .image-content .sale,
+html[dir="rtl"] .product-details .prodcutDetailsThumbsSlider .swiper-button-prev,
+html[dir="rtl"] .table-resposive table td .product-num .num-btn.add {
+  left: unset !important;
+  right: 10px !important;
+}
+
+html[dir="rtl"] .table-resposive table td .product-num .num-btn.min,
+html[dir="rtl"] .product-details .prodcutDetailsThumbsSlider .swiper-button-next {
+  right: unset !important;
+  left: 10px !important;
+}
+
+html[dir="rtl"] header .swiper-button-prev {
+  right: unset !important;
+  left: 90px !important;
+}
+
+html[dir="rtl"] header .swiper-button-next {
+  right: unset !important;
+  left: 30px !important;
+}
+
+html[dir="rtl"] .swiper-button-next {
+  right: unset !important;
+  left: calc(50% - 45px) !important;
+}
+
+html[dir="rtl"] .swiper-button-prev {
+  left: unset !important;
+  right: calc(50% - 45px) !important;
+}
+
+html[dir="rtl"] .form-contain .show_pass, html[dir="rtl"] .form-data .show_pass {
+  right: unset !important;
+  left: 25px !important;
+}
+
 .navbar {
   width: 100%;
   padding: 0px;
