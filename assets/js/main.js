@@ -69,6 +69,33 @@ $(document).ready(function () {
         }
     });
 
+    var swiper = new Swiper('.top-category-swiper', {
+        loop: true,
+        speed: 900,
+        spaceBetween: 15,
+        autoplay: {
+            delay: 2500,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+            },
+            640: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 6,
+            },
+        }
+    });
+
     var swiper = new Swiper('.brands', {
         loop: true,
         speed: 900,
